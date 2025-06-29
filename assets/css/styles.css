@@ -431,7 +431,6 @@ html {
 
 .despre-noi-section {
     padding: 50px 5vw;
-    height: 60vh;
     background-image: url('../img/despre_noi_bckg.png');
     background-attachment: fixed;
     background-size: cover;
@@ -464,6 +463,10 @@ html {
 
 /* Desktop */
 @media (min-width: 1025px) {
+    .despre-noi-section{
+            height: 60vh;
+    }
+
     .section-title {
         font-family: 'Dosis', sans-serif;
         font-size: 36px;
