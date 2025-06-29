@@ -373,7 +373,7 @@ html {
 .first-section {
     width: 100vw;
     height: 100vh;
-    background-image: url('./assets/img/dj_setup.jpg');
+    background-image: url('assets/img/dj_setup.jpg');
     background-size: cover;
     background-position: left center;
     background-repeat: no-repeat;
@@ -432,7 +432,7 @@ html {
 .despre-noi-section {
     padding: 50px 5vw;
     height: 60vh;
-    background-image: url('./assets/img/despre_noi_bckg.png');
+    background-image: url('assets/img/despre_noi_bckg.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -689,7 +689,7 @@ html {
 
 /* Section 4 */
 .forth-section {
-    background-image: url('./assets/img/4_section_bckg.jpg');
+    background-image: url('assets/img/4_section_bckg.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
