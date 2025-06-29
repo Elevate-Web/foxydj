@@ -548,7 +548,7 @@ html {
 @media (max-width: 768px) {
     .section-title {
         font-family: 'Dosis', sans-serif;
-        font-size: 20px;
+        font-size: 40px;
         color: white;
         text-align: center;
         margin: 0 0 15px 0;
@@ -1113,3 +1113,123 @@ html {
         height: 200px;
     }
 }
+
+/* Section 7 */
+.echipament-section {
+    padding: 80px 5vw;
+    background-color: #1E0F2F;
+}
+
+.echipament-container {
+    padding-top: 7.5vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.echipament-row {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 3vw;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.echipament-row.reverse {
+    grid-template-columns: 1.25fr 1fr;
+}
+
+.echipament-row.reverse .echipament-content {
+    order: 2;
+}
+
+.echipament-row.reverse .echipament-image {
+    order: 1;
+}
+
+.echipament-title {
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-align: left;
+        -webkit-text-stroke: 0.75px #FF8400;
+}
+
+.echipament-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.echipament-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.echipament-row.reverse .echipament-title {
+    text-align: right;
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .echipament-row {
+        gap: 4vw;
+        margin-bottom: 50px;
+    }
+
+    .echipament-image img {
+        height: 250px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .echipament-row,
+    .echipament-row.reverse {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .echipament-row.reverse .echipament-content,
+    .echipament-row.reverse .echipament-image {
+        order: unset;
+    }
+
+    .echipament-image,
+    .echipament-row.reverse .echipament-image {
+        order: 1;
+    }
+
+    .echipament-content,
+    .echipament-row.reverse .echipament-content {
+        order: 2;
+    }
+
+    .echipament-image img {
+        height: 250px;
+    }
+
+    .echipament-title,
+    .echipament-row.reverse .echipament-title {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .echipament-description {
+        font-size: 16px;
+        font-weight: 200;
+        text-align: justify;
+    }
+}
+
+/* Section 8 - testimoniale v1 */
+
+/* Section 8 - contact v1 */
