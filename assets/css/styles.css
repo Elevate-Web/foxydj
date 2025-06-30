@@ -508,6 +508,10 @@ html {
 
 /* Tablet/Laptop */
 @media (min-width: 769px) and (max-width: 1024px) {
+    .despre-noi-section {
+        background-attachment: scroll;
+    }
+
     .section-title {
         font-family: 'Dosis', sans-serif;
         font-size: 30px;
@@ -549,22 +553,7 @@ html {
 
 /* Mobile */
 @media (max-width: 768px) {
-    body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/despre_noi_bckg.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: -1;
-    }
-
     .despre-noi-section {
-        background-image: none;
         background-attachment: scroll;
     }
 
@@ -772,6 +761,7 @@ html {
 @media (min-width: 769px) and (max-width: 1024px) {
     .forth-section {
         height: 45vh;
+        background-attachment: scroll;
     }
 
     .forth-title {
@@ -787,6 +777,7 @@ html {
 @media (max-width: 768px) {
     .forth-section {
         height: 45vh;
+        background-attachment: scroll;
     }
 
     .forth-title {
@@ -797,6 +788,7 @@ html {
         font-size: 18px;
     }
 }
+
 
 /* Section 5 */
 .echipa-section {
