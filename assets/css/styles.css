@@ -549,6 +549,27 @@ html {
 
 /* Mobile */
 @media (max-width: 768px) {
+    .despre-noi-section {
+        background-attachment: scroll;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+    }
+    
+    .despre-noi-section::before {
+        content: '';
+        position: absolute;
+        top: -20%;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background-image: url('../img/despre_noi_bckg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        transform: translateZ(-1px) scale(1.5);
+    }
+
     .section-title {
         font-family: 'Dosis', sans-serif;
         font-size: 40px;
@@ -1232,6 +1253,10 @@ html {
         text-align: justify;
     }
 }
+
+/* Pe telefon nu se vad bine imaginile de bckg la unele sectiuni */
+
+/* La Sectiunea 6 de adaugat functionalitate: deschide poza la click */
 
 /* Section 8 - testimoniale v1 */
 
