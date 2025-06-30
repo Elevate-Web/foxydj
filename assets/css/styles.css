@@ -426,6 +426,21 @@ html {
     }
 }
 
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .first-section {
+        height: 100vh;
+        height: 100dvh;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .first-section {
+        height: 100vh;
+        height: 100dvh;
+    }
+}
 
 /* Section 2 */
 
@@ -463,8 +478,8 @@ html {
 
 /* Desktop */
 @media (min-width: 1025px) {
-    .despre-noi-section{
-            height: 60vh;
+    .despre-noi-section {
+        height: 60vh;
     }
 
     .section-title {
@@ -1167,7 +1182,7 @@ html {
     color: #FFFFFF;
     margin-bottom: 20px;
     text-align: left;
-        -webkit-text-stroke: 0.75px #FF8400;
+    -webkit-text-stroke: 0.75px #FF8400;
 }
 
 .echipament-description {
@@ -1204,6 +1219,7 @@ html {
 
 /* Mobile */
 @media (max-width: 768px) {
+
     .echipament-row,
     .echipament-row.reverse {
         grid-template-columns: 1fr;
