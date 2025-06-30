@@ -426,19 +426,19 @@ html {
     }
 }
 
-/* Tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
     .first-section {
         height: 100vh;
         height: 100dvh;
+        background-attachment: fixed;
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .first-section {
         height: 100vh;
         height: 100dvh;
+        background-attachment: fixed;
     }
 }
 
