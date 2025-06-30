@@ -548,16 +548,10 @@ html {
 }
 
 /* Mobile */
-/* Mobile */
 @media (max-width: 768px) {
-    .despre-noi-section {
-        background-image: none;
-        background-attachment: scroll;
-    }
-    
-    .despre-noi-section::before {
+    body::before {
         content: '';
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -566,12 +560,12 @@ html {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        z-index: 1;
+        z-index: -1;
     }
 
-    .despre-noi-section > * {
-        position: relative;
-        z-index: 2;
+    .despre-noi-section {
+        background-image: none;
+        background-attachment: scroll;
     }
 
     .section-title {
