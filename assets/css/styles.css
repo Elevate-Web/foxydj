@@ -426,22 +426,6 @@ html {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    .first-section {
-        height: 100vh;
-        height: 100dvh;
-        background-attachment: fixed;
-    }
-}
-
-@media (max-width: 768px) {
-    .first-section {
-        height: 100vh;
-        height: 100dvh;
-        background-attachment: fixed;
-    }
-}
-
 /* Section 2 */
 
 .despre-noi-section {
