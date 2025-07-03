@@ -1283,7 +1283,6 @@ html {
 /* Section 8 */
 .testimonials-section {
     padding: 80px 5vw;
-    height: 60vh;
     background-image: url('../img/testimonial_bckg.png');
     background-size: cover;
     background-position: top center;
@@ -1414,6 +1413,13 @@ html {
 .google-review-link:hover {
     background: #FF8400;
     color: white;
+}
+
+@media (min-width: 1440px) {
+    .testimonials-section {
+        background-attachment: fixed;
+        height: 60vh;
+    }
 }
 
 /* Desktop */
