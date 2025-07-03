@@ -2,10 +2,15 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const currentPath = window.location.pathname;
+  const currentPage = currentPath.split("/").pop() || "index.html";
   const navLinks = document.querySelectorAll(".nav-links a");
 
   navLinks.forEach((link) => {
-    if (link.getAttribute("href") === currentPath) {
+    const linkPage = link.getAttribute("href");
+    if (
+      linkPage === currentPage ||
+      (currentPage === "" && linkPage === "index.html")
+    ) {
       link.classList.add("active");
     }
   });
