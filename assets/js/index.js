@@ -96,28 +96,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Testimonials
 document.addEventListener("DOMContentLoaded", function () {
-    const testimonialCards = document.querySelectorAll(".testimonial-card");
-    const testimonialDots = document.querySelectorAll(".testimonial-dots .dot");
-    let currentTestimonial = 0;
+  const testimonialCards = document.querySelectorAll(".testimonial-card");
+  const testimonialDots = document.querySelectorAll(".testimonial-dots .dot");
+  const testimonialsSection = document.querySelector(".testimonials-section");
+  let currentTestimonial = 0;
+  let autoRotateInterval;
 
-    function showTestimonial(index) {
-        testimonialCards.forEach((card, i) => {
-            card.classList.toggle("active", i === index);
-        });
-        
-        testimonialDots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === index);
-        });
-        
-        currentTestimonial = index;
-    }
-
-    testimonialDots.forEach((dot, index) => {
-        dot.addEventListener("click", () => showTestimonial(index));
+  function showTestimonial(index) {
+    testimonialCards.forEach((card, i) => {
+      card.classList.toggle("active", i === index);
     });
 
-    setInterval(() => {
-        currentTestimonial = (currentTestimonial + 1) % testimonialCards.length;
-        showTestimonial(currentTestimonial);
+    testimonialDots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+
+    currentTestimonial = index;
+  }
+
+  function startAutoRotate() {
+    autoRotateInterval = setInterval(() => {
+      currentTestimonial = (currentTestimonial + 1) % testimonialCards.length;
+      showTestimonial(currentTestimonial);
     }, 5000);
+  }
+
+  function stopAutoRotate() {
+    clearInterval(autoRotateInterval);
+  }
+
+  testimonialDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => showTestimonial(index));
+  });
+
+  // Pause on hover
+  testimonialsSection.addEventListener("mouseenter", stopAutoRotate);
+  testimonialsSection.addEventListener("mouseleave", startAutoRotate);
+
+  // Start auto-rotate
+  startAutoRotate();
 });
