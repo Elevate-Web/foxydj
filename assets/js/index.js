@@ -93,3 +93,31 @@ document.addEventListener("DOMContentLoaded", function () {
     changeVideo(currentVideo);
   });
 });
+
+// Testimonials
+document.addEventListener("DOMContentLoaded", function () {
+    const testimonialCards = document.querySelectorAll(".testimonial-card");
+    const testimonialDots = document.querySelectorAll(".testimonial-dots .dot");
+    let currentTestimonial = 0;
+
+    function showTestimonial(index) {
+        testimonialCards.forEach((card, i) => {
+            card.classList.toggle("active", i === index);
+        });
+        
+        testimonialDots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
+        });
+        
+        currentTestimonial = index;
+    }
+
+    testimonialDots.forEach((dot, index) => {
+        dot.addEventListener("click", () => showTestimonial(index));
+    });
+
+    setInterval(() => {
+        currentTestimonial = (currentTestimonial + 1) % testimonialCards.length;
+        showTestimonial(currentTestimonial);
+    }, 5000);
+});
