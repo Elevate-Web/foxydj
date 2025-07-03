@@ -28,6 +28,33 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Image
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox-close");
+  const galleryImages = document.querySelectorAll(".photo-item img");
+
+  galleryImages.forEach((img) => {
+    img.style.cursor = "pointer";
+    img.addEventListener("click", function () {
+      lightbox.style.display = "block";
+      lightboxImg.src = this.src;
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.style.display = "none";
+  }
+
+  closeBtn.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", function (e) {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+});
+
 // Video player
 document.addEventListener("DOMContentLoaded", function () {
   const iframe = document.getElementById("mainVideo");
