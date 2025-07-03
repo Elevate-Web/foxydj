@@ -1444,6 +1444,7 @@ html {
 
     .testimonials-container {
         height: 450px;
+        margin-bottom: 0;
     }
 
     .testimonial-text {
@@ -1461,6 +1462,10 @@ html {
 
     .testimonial-stars {
         font-size: 18px;
+    }
+
+    .google-review-link{
+        margin-bottom: 0;
     }
 }
 
