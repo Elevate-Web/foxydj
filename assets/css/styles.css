@@ -424,6 +424,10 @@ html {
         font-size: 68px;
         -webkit-text-stroke: 3px white;
     }
+
+    .first-section {
+        background-attachment: scroll;
+    }
 }
 
 /* Section 2 */
@@ -1244,10 +1248,14 @@ html {
     }
 }
 
-/* Pe telefon nu se vad bine imaginile de bckg la unele sectiuni */
+/* zoom in la primul background pe mobile */
+
+/* stil pe meniu header*/
 
 /* La Sectiunea 6 de adaugat functionalitate: deschide poza la click */
 
 /* Section 8 - testimoniale v1 */
 
-/* Section 8 - contact v1 */
+/* Section 9 - contact v1 */
+
+/* Section 10 - footer promodj.ro - vanzator autorizat pioneer */
