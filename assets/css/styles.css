@@ -1595,6 +1595,16 @@ a.contact-value:hover {
     color: #FF8400;
 }
 
+.footer-credits a {
+    color: #FF8400;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-credits a:hover {
+    opacity: 0.8;
+}
+
 /* Tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
     .footer-logos {
@@ -1623,7 +1633,7 @@ a.contact-value:hover {
 
     .footer-logos {
         display: flex;
-        animation: scroll-logos 15s linear infinite;
+        animation: scroll-logos 4s linear infinite;
         gap: 40px;
         width: max-content;
     }
