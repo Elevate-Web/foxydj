@@ -1656,7 +1656,7 @@ a.contact-value:hover {
 
     .footer-logos {
         display: flex;
-        animation: scroll-logos 12s linear infinite;
+        animation: scroll-logos 4s linear infinite;
         gap: 30px;
         width: max-content;
     }
