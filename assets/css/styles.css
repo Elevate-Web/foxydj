@@ -1426,6 +1426,7 @@ html {
 @media (min-width: 1025px) {
     .testimonials-section {
         background-attachment: fixed;
+        height: fit-content;
     }
 }
 
