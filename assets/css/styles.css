@@ -1605,6 +1605,22 @@ a.contact-value:hover {
     opacity: 0.8;
 }
 
+.pioneer-link {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.pioneer-link a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.pioneer-link a:hover {
+    color: #FF8400;
+}
+
+
 /* Tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
     .footer-logos {
