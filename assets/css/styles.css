@@ -1633,7 +1633,7 @@ a.contact-value:hover {
 
     .footer-logos {
         display: flex;
-        animation: scroll-logos 3s linear infinite;
+        animation: scroll-logos 4s linear infinite;
         gap: 40px;
         width: max-content;
     }
@@ -1666,7 +1666,7 @@ a.contact-value:hover {
 
     .footer-logos {
         display: flex;
-        animation: scroll-logos 2s linear infinite;
+        animation: scroll-logos 3s linear infinite;
         gap: 30px;
         width: max-content;
     }
