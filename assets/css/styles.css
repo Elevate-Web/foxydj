@@ -1470,6 +1470,169 @@ html {
     }
 }
 
-/* Section 9 - contact v1 */
+/* Section 9 */
+.footer-section {
+    padding: 60px 5vw 30px;
+    background-color: #1E0F2F;
+    text-align: center;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-logos img {
+    height: 70px;
+    width: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer-logos img:hover {
+    opacity: 1;
+}
+
+.footer-separator {
+    width: 60vw;
+    height: 2px;
+    background-color: #FF8400;
+    margin: 30px auto;
+}
+
+.footer-separator-2 {
+    width: 20vw;
+    height: 2px;
+    background-color: #FF8400;
+    margin: 30px auto;
+}
+
+.footer-title {
+    font-family: 'Dosis', sans-serif;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+    -webkit-text-stroke: 1px #FF8400;
+    margin-top: 10vh;
+}
+
+.footer-description {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 30px auto;
+    margin-top: 7.5vh;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10vw;
+    margin-bottom: 7.5vh;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    text-align: left;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-value a,
+a.contact-value {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-value a:hover,
+a.contact-value:hover {
+    color: #FF8400;
+}
+
+.contact-label {
+    font-family: 'Dosis', sans-serif;
+    color: #FF8400;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-value {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-logo img {
+    height: 110px;
+    margin: 20px 0;
+}
+
+.footer-credits {
+    font-family: 'Lato', sans-serif;
+    color: #FF8400;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer-credits strong {
+    color: #FF8400;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer-logos {
+        gap: 20px;
+    }
+    
+    .footer-logos img {
+        height: 40px;
+    }
+    
+    .footer-title {
+        font-size: 28px;
+    }
+    
+    .footer-description {
+        font-size: 14px;
+    }
+    
+    .footer-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .contact-item {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact-info {
+        align-items: center;
+    }
+    
+    .contact-value {
+        font-size: 14px;
+    }
+    
+    .footer-logo img {
+        height: 60px;
+    }
+}
 
 /* Section 10 - footer promodj.ro - vanzator autorizat pioneer */
