@@ -1708,7 +1708,12 @@ a.contact-value:hover {
     }
 
     .contact-info {
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-value {
+        font-size: 14px;
     }
 
     .contact-value {
