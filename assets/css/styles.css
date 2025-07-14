@@ -2411,6 +2411,35 @@ a.contact-value:hover {
     color: #FF8400;
 }
 
+.photo-item.hidden {
+    display: none;
+}
+
+.load-more-btn {
+    display: block;
+    margin: 40px auto;
+    padding: 15px 30px;
+    background-color: #FF8400;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background-color: white;
+    color: #FF8400;
+    transform: scale(1.05);
+}
+
+.load-more-btn.hidden {
+    display: none;
+}
+
 @keyframes gradientShift {
 
     0%,

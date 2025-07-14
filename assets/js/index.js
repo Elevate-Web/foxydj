@@ -129,10 +129,42 @@ document.addEventListener("DOMContentLoaded", function () {
     dot.addEventListener("click", () => showTestimonial(index));
   });
 
-  // Pause on hover
   testimonialsSection.addEventListener("mouseenter", stopAutoRotate);
   testimonialsSection.addEventListener("mouseleave", startAutoRotate);
 
-  // Start auto-rotate
   startAutoRotate();
+});
+
+// Load More/Show Less Photos - Galerie
+document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const showLessBtn = document.getElementById('showLessBtn');
+    const hiddenPhotos = document.querySelectorAll('.photo-item.hidden');
+    
+    if (loadMoreBtn && hiddenPhotos.length > 0) {
+        loadMoreBtn.addEventListener('click', function() {
+            hiddenPhotos.forEach(photo => {
+                photo.classList.remove('hidden');
+            });
+            loadMoreBtn.classList.add('hidden');
+            if (showLessBtn) {
+                showLessBtn.classList.remove('hidden');
+            }
+        });
+    }
+    
+    if (showLessBtn) {
+        showLessBtn.addEventListener('click', function() {
+            hiddenPhotos.forEach(photo => {
+                photo.classList.add('hidden');
+            });
+            showLessBtn.classList.add('hidden');
+            if (loadMoreBtn) {
+                loadMoreBtn.classList.remove('hidden');
+            }
+            document.querySelector('#photo-item-12').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        });
+    }
 });
