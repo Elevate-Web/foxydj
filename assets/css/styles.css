@@ -3089,6 +3089,10 @@ a.contact-value:hover {
     margin: 0 auto;
 }
 
+.contact-container .title-separator {
+    max-width: 800px;
+}
+
 .contact-info-grid {
     display: grid;
     gap: 30px;
@@ -3212,6 +3216,10 @@ a.contact-value:hover {
     margin-right: auto;
 }
 
+.contact-map .title-separator {
+    max-width: 800px;
+}
+
 @media (min-width: 1440px) {
     .contact-hero-title {
         font-size: 108px;
@@ -3241,7 +3249,15 @@ a.contact-value:hover {
         max-width: 600px;
     }
 
+    .contact-container .title-separator {
+        max-width: 600px;
+    }
+
     .map-container {
+        max-width: 600px;
+    }
+
+    .contact-map .title-separator {
         max-width: 600px;
     }
 }
@@ -3264,7 +3280,15 @@ a.contact-value:hover {
         max-width: 600px;
     }
 
+    .contact-container .title-separator {
+        max-width: 600px;
+    }
+
     .map-container {
+        max-width: 600px;
+    }
+
+    .contact-map .title-separator {
         max-width: 600px;
     }
 
