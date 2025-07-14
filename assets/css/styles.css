@@ -2124,8 +2124,8 @@ a.contact-value:hover {
 /* Desktop */
 @media (min-width: 1025px) and (max-width: 1439px) {
     .servicii-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
     }
 
     .pricing-grid {
