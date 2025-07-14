@@ -610,7 +610,7 @@ html {
 }
 
 .servicii-container {
-    align-items: center;
+    align-items: stretch;
 }
 
 .serviciu-card {
@@ -852,6 +852,7 @@ html {
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
         flex: 1;
+        align-items: stretch;
     }
 
     .echipa-section {
@@ -1821,6 +1822,7 @@ a.contact-value:hover {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     margin-top: 50px;
+    align-items: stretch;
 }
 
 .serviciu-item {
@@ -1837,12 +1839,14 @@ a.contact-value:hover {
 .serviciu-image {
     height: 200px;
     overflow: hidden;
+    position: relative;
 }
 
 .serviciu-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .serviciu-content {
@@ -1927,6 +1931,7 @@ a.contact-value:hover {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-top: 50px;
+    align-items: stretch;
 }
 
 .pricing-card {
@@ -1937,6 +1942,10 @@ a.contact-value:hover {
     position: relative;
     transition: transform 0.3s ease;
     border: 2px solid transparent;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .pricing-card:hover {
@@ -2286,6 +2295,7 @@ a.contact-value:hover {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    align-items: stretch;
 }
 
 .video-item {
@@ -2295,6 +2305,7 @@ a.contact-value:hover {
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 200px;
 }
 
 .video-item:hover {
@@ -2872,7 +2883,11 @@ a.contact-value:hover {
 
     .values-grid {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 30px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .member-content {
