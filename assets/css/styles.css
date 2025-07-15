@@ -917,6 +917,7 @@ html {
 .video-presentation {
     max-width: 1200px;
     margin: 40px auto;
+    position: relative;
 }
 
 .video-container {
@@ -934,6 +935,7 @@ html {
 }
 
 .video-controls {
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -975,7 +977,7 @@ html {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    pointer-events: all;
+    pointer-events: auto;
     transition: transform 0.2s;
     display: flex;
     align-items: center;
@@ -989,11 +991,12 @@ html {
 
 .video-dots {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 10px;
+    pointer-events: auto;
 }
 
 .dot {

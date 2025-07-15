@@ -63,16 +63,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextBtn = document.getElementById("nextVideo");
 
   const videos = [
-    "https://www.youtube.com/embed/tAGnKpE4NCI?si=obTmSRDPNaAotOwx",
-    "https://www.youtube.com/embed/CD-E-LDc384?si=dt6uEKS0AunLOuEf",
-    "https://www.youtube.com/embed/E0ozmU9cJDg?si=9Axlo0Y4uISdzczG",
+    "https://www.youtube.com/embed/tAGnKpE4NCI",
+    "https://www.youtube.com/embed/9bZkp7q19f0",
+    "https://www.youtube.com/embed/9bZkp7q19f0",
   ];
 
   let currentVideo = 0;
 
   function changeVideo(index) {
     currentVideo = index;
-    iframe.src = videos[currentVideo];
+    iframe.src = videos[currentVideo] + "?t=" + Date.now();
 
     dots.forEach((dot, i) => {
       dot.classList.toggle("active", i === currentVideo);
