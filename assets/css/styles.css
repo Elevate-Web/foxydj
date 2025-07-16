@@ -1733,6 +1733,17 @@ a.contact-value:hover {
     margin: 0;
 }
 
+.max-persons {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+    margin: 0 0 20px 0;
+    opacity: 0.8;
+    text-align: center;
+}
+
+
 .serviciu-features li {
     font-family: 'Lato', sans-serif;
     color: white;
@@ -1913,6 +1924,118 @@ a.contact-value:hover {
     color: white;
 }
 
+/* Lighting section styling */
+.lighting-section {
+    background: linear-gradient(135deg, rgba(30, 15, 47, 0.9), rgba(60, 30, 80, 0.9));
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.lighting-grid {
+    margin-top: 40px;
+}
+
+.lighting-card {
+    background: linear-gradient(135deg, rgba(255, 132, 0, 0.1), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(255, 132, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.lighting-card.featured {
+    background: linear-gradient(135deg, rgba(255, 132, 0, 0.2), rgba(255, 255, 255, 0.08));
+    border: 2px solid rgba(255, 132, 0, 0.4);
+}
+
+.lighting-card .pricing-title {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.lighting-button {
+    background: linear-gradient(135deg, #FF8400, #e67300);
+    border: none;
+}
+
+.lighting-button:hover {
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 132, 0, 0.3);
+}
+
+.lighting-card.featured .lighting-button {
+    background: white;
+    color: #FF8400;
+}
+
+.lighting-card.featured .lighting-button:hover {
+    background: linear-gradient(135deg, #FF8400, #e67300);
+    color: white;
+}
+
+.simple-section {
+    background-color: #1E0F2F;
+    padding: 80px 5vw;
+    position: relative;
+}
+
+.simple-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 132, 0, 0.3), transparent);
+}
+
+.simple-grid {
+    margin-top: 50px;
+}
+
+.simple-card {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 2px solid #FF8400;
+    box-shadow: 0 0 15px rgba(255, 132, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.simple-card:hover {
+    transform: translateY(-5px);
+    border-color: #FF8400;
+    box-shadow: 0 10px 25px rgba(255, 132, 0, 0.4);
+}
+
+.simple-card .pricing-title {
+    margin-bottom: 15px;
+}
+
+.simple-description {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 20px 0;
+    opacity: 0.8;
+    min-height: 70px;
+}
+
+.simple-button {
+    background-color: transparent;
+    border: 1px solid #FF8400;
+    color: #FF8400;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.simple-button:hover {
+    background-color: #FF8400;
+    color: white;
+}
+
 .cta-title {
     font-family: 'Dosis', sans-serif;
     font-size: 36px;
@@ -1989,10 +2112,20 @@ a.contact-value:hover {
         grid-template-columns: repeat(2, 1fr);
         gap: 60px;
     }
-
+    
     .pricing-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
+    }
+    
+    .lighting-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+    
+    .simple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
     }
 
     .servicii-hero-title {
@@ -2004,6 +2137,10 @@ a.contact-value:hover {
     .servicii-hero-subtitle {
         font-size: 26px;
         letter-spacing: 2.5px;
+    }
+    
+    .simple-description {
+        min-height: 90px;
     }
 }
 
@@ -2044,6 +2181,37 @@ a.contact-value:hover {
         font-size: 22px;
         letter-spacing: 2px;
     }
+
+    .lighting-grid,
+    .simple-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .lighting-card,
+    .simple-card {
+        padding: 25px;
+    }
+
+    .simple-description {
+        min-height: 80px;
+    }
+
+    .lighting-section,
+    .simple-section {
+        padding: 60px 4vw;
+    }
+
+    .lighting-card .pricing-title,
+    .simple-card .pricing-title {
+        font-size: 18px;
+    }
+
+    .lighting-button,
+    .simple-button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
 }
 
 /* Mobile */
@@ -2074,9 +2242,68 @@ a.contact-value:hover {
         letter-spacing: 1.5px;
         top: 68%;
     }
+
+    .lighting-grid,
+    .simple-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pricing-card,
+    .lighting-card,
+    .simple-card {
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .simple-description {
+        min-height: auto;
+    }
+
+    .simple-card::before {
+        opacity: 0.2;
+    }
+
+    .lighting-section,
+    .simple-section {
+        padding: 50px 4vw;
+    }
+
+    .pricing-features {
+        width: 100%;
+        text-align: left;
+    }
+
+    .lighting-card .pricing-features li {
+        text-align: left;
+    }
+
+    .pricing-button,
+    .lighting-button,
+    .simple-button {
+        width: auto;
+        min-width: 180px;
+        padding: 12px 25px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 30px;
+    }
+
+    .pricing-header {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .pricing-price {
+        justify-content: center;
+    }
 }
-
-
 
 /* Galerie */
 .galerie-hero {
