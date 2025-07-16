@@ -611,6 +611,7 @@ html {
 
 .servicii-container {
     align-items: stretch;
+    padding-top: 5vh;
 }
 
 .serviciu-card {
@@ -705,7 +706,7 @@ html {
 
 /* Section 4 */
 .forth-section {
-    background-image: url('../img/4_section_bckg.jpg');
+    background-image: url('../img/servicii_bckg.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -812,14 +813,12 @@ html {
 
 .membru-card:hover {
     transform: scale(1.05);
-    cursor: pointer;
 }
 
 .membru-card img {
     width: 100%;
     object-fit: cover;
     object-position: top center;
-
 }
 
 .membru-info {
@@ -832,18 +831,10 @@ html {
 .membru-name {
     font-family: 'Dosis', sans-serif;
     color: white;
-    margin: 0 0 5px 0;
+    margin: 0;
     font-size: 18px;
     font-weight: 600;
 }
-
-.membru-function {
-    font-family: 'Lato', sans-serif;
-    color: white;
-    margin: 0;
-    font-size: 14px;
-}
-
 
 /* Desktop */
 @media (min-width: 1025px) {
@@ -1424,7 +1415,7 @@ html {
 @media (min-width: 1440px) {
     .testimonials-section {
         background-attachment: fixed;
-        height: 60vh;
+        height: fit-content;
     }
 }
 
