@@ -58,7 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // Video player
 document.addEventListener("DOMContentLoaded", function () {
   const iframe = document.getElementById("mainVideo");
-  const dots = document.querySelectorAll(".dot");
+  if (!iframe) return;
+
+  const dots = document.querySelectorAll(".video-dots .dot");
   const prevBtn = document.getElementById("prevVideo");
   const nextBtn = document.getElementById("nextVideo");
 
@@ -71,6 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentVideo = 0;
 
   function changeVideo(index) {
+    if (index < 0 || index >= videos.length) return;
+
     currentVideo = index;
     iframe.src = videos[currentVideo] + "?t=" + Date.now();
 
@@ -83,15 +87,19 @@ document.addEventListener("DOMContentLoaded", function () {
     dot.addEventListener("click", () => changeVideo(index));
   });
 
-  prevBtn.addEventListener("click", () => {
-    currentVideo = currentVideo > 0 ? currentVideo - 1 : videos.length - 1;
-    changeVideo(currentVideo);
-  });
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      currentVideo = currentVideo > 0 ? currentVideo - 1 : videos.length - 1;
+      changeVideo(currentVideo);
+    });
+  }
 
-  nextBtn.addEventListener("click", () => {
-    currentVideo = currentVideo < videos.length - 1 ? currentVideo + 1 : 0;
-    changeVideo(currentVideo);
-  });
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      currentVideo = currentVideo < videos.length - 1 ? currentVideo + 1 : 0;
+      changeVideo(currentVideo);
+    });
+  }
 });
 
 // Testimonials
@@ -136,35 +144,35 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Load More/Show Less Photos - Galerie
-document.addEventListener('DOMContentLoaded', function() {
-    const loadMoreBtn = document.getElementById('loadMoreBtn');
-    const showLessBtn = document.getElementById('showLessBtn');
-    const hiddenPhotos = document.querySelectorAll('.photo-item.hidden');
-    
-    if (loadMoreBtn && hiddenPhotos.length > 0) {
-        loadMoreBtn.addEventListener('click', function() {
-            hiddenPhotos.forEach(photo => {
-                photo.classList.remove('hidden');
-            });
-            loadMoreBtn.classList.add('hidden');
-            if (showLessBtn) {
-                showLessBtn.classList.remove('hidden');
-            }
-        });
-    }
-    
-    if (showLessBtn) {
-        showLessBtn.addEventListener('click', function() {
-            hiddenPhotos.forEach(photo => {
-                photo.classList.add('hidden');
-            });
-            showLessBtn.classList.add('hidden');
-            if (loadMoreBtn) {
-                loadMoreBtn.classList.remove('hidden');
-            }
-            document.querySelector('#photo-item-12').scrollIntoView({ 
-                behavior: 'smooth' 
-            });
-        });
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  const loadMoreBtn = document.getElementById("loadMoreBtn");
+  const showLessBtn = document.getElementById("showLessBtn");
+  const hiddenPhotos = document.querySelectorAll(".photo-item.hidden");
+
+  if (loadMoreBtn && hiddenPhotos.length > 0) {
+    loadMoreBtn.addEventListener("click", function () {
+      hiddenPhotos.forEach((photo) => {
+        photo.classList.remove("hidden");
+      });
+      loadMoreBtn.classList.add("hidden");
+      if (showLessBtn) {
+        showLessBtn.classList.remove("hidden");
+      }
+    });
+  }
+
+  if (showLessBtn) {
+    showLessBtn.addEventListener("click", function () {
+      hiddenPhotos.forEach((photo) => {
+        photo.classList.add("hidden");
+      });
+      showLessBtn.classList.add("hidden");
+      if (loadMoreBtn) {
+        loadMoreBtn.classList.remove("hidden");
+      }
+      document.querySelector("#photo-item-12").scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  }
 });
