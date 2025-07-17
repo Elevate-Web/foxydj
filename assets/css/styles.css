@@ -2090,6 +2090,14 @@ a.contact-value:hover {
 }
 
 @media (min-width: 1440px) {
+    .simple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+                max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .servicii-hero-title {
         font-size: 108px;
         line-height: 120px;
