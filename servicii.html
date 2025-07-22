@@ -4,8 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicii - Foxy DJ</title>
+    <title>Servicii DJ Nuntă, Botez și Evenimente Corporate | Foxy DJ București</title>
+    <meta name="description"
+        content="Descoperă serviciile profesioniste de DJ pentru nunți, botezuri și evenimente corporate oferite de Foxy DJ în București și împrejurimi.">
+    <meta name="keywords"
+        content="servicii dj, dj nunta, dj botez, dj evenimente, dj bucuresti, foxy dj, sonorizare evenimente">
+    <meta name="author" content="Foxy DJ">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://foxydj.ro/servicii.html">
+    <meta property="og:title" content="Servicii DJ Profesionist pentru Nunți și Evenimente | Foxy DJ">
+    <meta property="og:description"
+        content="Servicii profesioniste de DJ pentru nunți, botezuri și evenimente corporate în București. Sonorizare, lumini și entertainment de calitate.">
+    <meta property="og:image" content="./assets/img/Logo_no_bckg.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#1e0f2f">
+    <meta name="theme-color" content="#1e0f2f">
+
     <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- Google tag (gtag.js) with Consent Mode -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMM8KDBSG2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied',
+            'wait_for_update': 500
+        });
+
+        gtag('config', 'G-PMM8KDBSG2');
+    </script>
 </head>
 
 <body id="top">
@@ -239,6 +276,9 @@
 
         <div class="pricing-grid lighting-grid">
             <div class="pricing-card lighting-card">
+                <div class="lighting-image">
+                    <img src="./assets/img/lighting1.jpeg" alt="Efecte Speciale" width="300" height="200" loading="lazy">
+                </div>
                 <div class="pricing-header">
                     <h3 class="pricing-title">EFECTE SPECIALE</h3>
                     <div class="pricing-price">
@@ -253,6 +293,9 @@
             </div>
 
             <div class="pricing-card lighting-card">
+                <div class="lighting-image">
+                    <img src="./assets/img/lighting2.jpeg" alt="Efecte Speciale" width="300" height="200" loading="lazy">
+                </div>
                 <div class="pricing-header">
                     <h3 class="pricing-title">LUMINI BASIC</h3>
                     <div class="pricing-price">
@@ -269,6 +312,9 @@
             </div>
 
             <div class="pricing-card lighting-card">
+                <div class="lighting-image">
+                    <img src="./assets/img/lighting3.jpeg" alt="Efecte Speciale" width="300" height="200" loading="lazy">
+                </div>
                 <div class="pricing-header">
                     <h3 class="pricing-title">LUMINI STANDARD</h3>
                     <div class="pricing-price">
@@ -285,6 +331,9 @@
             </div>
 
             <div class="pricing-card lighting-card featured">
+                <div class="lighting-image">
+                    <img src="./assets/img/lighting4.jpeg" alt="Efecte Speciale" width="300" height="200" loading="lazy">
+                </div>
                 <div class="pricing-badge">POPULAR</div>
                 <div class="pricing-header">
                     <h3 class="pricing-title">LUMINI PREMIUM</h3>
@@ -304,6 +353,9 @@
             </div>
 
             <div class="pricing-card lighting-card">
+                <div class="lighting-image">
+                    <img src="./assets/img/lighting5.jpeg" alt="Efecte Speciale" width="300" height="200" loading="lazy">
+                </div>
                 <div class="pricing-header">
                     <h3 class="pricing-title">LUMINI DIAMOND</h3>
                     <div class="pricing-price">
@@ -388,7 +440,8 @@
                         <span class="price-currency">EURO</span>
                     </div>
                 </div>
-                <p class="simple-description">Transformă-ți evenimentul într-un adevărat spectacol cu un MC dedicat, carismatic și plin de energie!</p>
+                <p class="simple-description">Transformă-ți evenimentul într-un adevărat spectacol cu un MC dedicat,
+                    carismatic și plin de energie!</p>
                 <a href="tel:+40725546625" class="pricing-button simple-button">SOLICITĂ ACEST PACHET</a>
             </div>
         </div>
@@ -460,7 +513,7 @@
         <div class="footer-credits">
             <a href="https://elevatewebdynamics.com" target="_blank">
                 <p>Developed by <strong>Elevate Web
-                        Dynamics</strong> © 2025 - All Rights Reserved</p>
+                        Dynamics</strong> © <span id="current-year"></span> - All Rights Reserved</p>
             </a>
             <p class="pioneer-link">
                 <a href="https://promodj.ro" target="_blank">Promo DJ - Dealer Autorizat Pioneer</a>
@@ -484,6 +537,16 @@
                     d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
             </svg>
         </a>
+    </div>
+
+    <!-- Cookie Consent -->
+    <div id="cookie-consent" class="cookie-consent">
+        <p>Acest site folosește cookie-uri pentru a îmbunătăți experiența utilizatorilor. Acceptați utilizarea
+            cookie-urilor?</p>
+        <div class="cookie-consent-buttons">
+            <button id="accept-cookies" class="accept-cookies">Accept</button>
+            <button id="reject-cookies" class="reject-cookies">Refuz</button>
+        </div>
     </div>
 
     <script src="./assets/js/index.js"></script>

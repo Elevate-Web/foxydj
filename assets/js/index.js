@@ -176,3 +176,57 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// automate years
+document.addEventListener("DOMContentLoaded", function () {
+  const currentYear = new Date().getFullYear();
+
+  const availabilityCurrentYear = document.getElementById(
+    "availability-current-year"
+  );
+  const availabilityNextYear = document.getElementById(
+    "availability-next-year"
+  );
+
+  if (availabilityCurrentYear) {
+    availabilityCurrentYear.textContent = currentYear;
+  }
+
+  if (availabilityNextYear) {
+    availabilityNextYear.textContent = currentYear + 1;
+  }
+
+  const copyrightYear = document.getElementById("current-year");
+  if (copyrightYear) {
+    copyrightYear.textContent = currentYear;
+  }
+});
+
+// Cookie Consent
+document.addEventListener("DOMContentLoaded", function () {
+  const cookieConsent = document.getElementById("cookie-consent");
+  const acceptBtn = document.getElementById("accept-cookies");
+  const rejectBtn = document.getElementById("reject-cookies");
+
+  if (!localStorage.getItem("cookieConsent")) {
+    cookieConsent.style.display = "block";
+  }
+
+  acceptBtn.addEventListener("click", function () {
+    gtag("consent", "update", {
+      analytics_storage: "granted",
+      ad_storage: "granted",
+    });
+    localStorage.setItem("cookieConsent", "accepted");
+    cookieConsent.style.display = "none";
+  });
+
+  rejectBtn.addEventListener("click", function () {
+    gtag("consent", "update", {
+      analytics_storage: "denied",
+      ad_storage: "denied",
+    });
+    localStorage.setItem("cookieConsent", "rejected");
+    cookieConsent.style.display = "none";
+  });
+});

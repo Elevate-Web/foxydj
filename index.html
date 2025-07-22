@@ -4,9 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Foxy DJ | DJ Profesionist pentru Nunți, Botezuri și Evenimente în București</title>
+    <meta name="description"
+        content="Foxy DJ oferă servicii profesioniste de DJ pentru nunți, botezuri și evenimente corporate în București și împrejurimi. Peste 10 ani de experiență în mixaj și entertainment.">
+    <meta name="keywords"
+        content="dj nunta, dj botez, dj evenimente, dj bucuresti, foxy dj, dj corporate, sonorizare evenimente">
+    <meta name="author" content="Foxy DJ">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://foxydj.ro/">
+    <meta property="og:title" content="Foxy DJ | DJ Profesionist pentru Nunți și Evenimente">
+    <meta property="og:description"
+        content="Servicii profesioniste de DJ pentru nunți, botezuri și evenimente corporate în București. Peste 10 ani de experiență în mixaj și entertainment.">
+    <meta property="og:image" content="./assets/img/Logo_no_bckg.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#1e0f2f">
+    <meta name="theme-color" content="#1e0f2f">
+
     <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- Google tag (gtag.js) with Consent Mode -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMM8KDBSG2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied',
+            'wait_for_update': 500
+        });
+
+        gtag('config', 'G-PMM8KDBSG2');
+    </script>
 </head>
+
 
 <body id="top">
     <header>
@@ -116,7 +154,8 @@
     </section>
     <!-- Section 4 -->
     <section class="forth-section">
-        <h2 class="forth-title">DISPONIBILITATE EVENIMENTE 2025 & 2026</h2>
+        <h2 class="forth-title">DISPONIBILITATE EVENIMENTE <span id="availability-current-year"></span> & <span
+                id="availability-next-year"></span></h2>
         <h3 class="forth-subtitle">Deplasare Gratuita In Bucuresti - Ilfov</h3>
     </section>
     <!-- Section 5 -->
@@ -168,11 +207,9 @@
 
         <div class="video-presentation">
             <div class="video-container">
-                <iframe id="mainVideo" 
-                        src="https://www.youtube.com/embed/ViTG3HZfwgk?si=JnnQqrmHm_BV3mI_" 
-                        frameborder="0" 
-                        allowfullscreen
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                <iframe id="mainVideo" src="https://www.youtube.com/embed/ViTG3HZfwgk?si=JnnQqrmHm_BV3mI_"
+                    frameborder="0" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
                 </iframe>
                 <div class="video-controls">
                     <div class="video-nav-arrows">
@@ -494,7 +531,7 @@
         <div class="footer-credits">
             <a href="https://elevatewebdynamics.com" target="_blank">
                 <p>Developed by <strong>Elevate Web
-                        Dynamics</strong> © 2025 - All Rights Reserved</p>
+                        Dynamics</strong> © <span id="current-year"></span> - All Rights Reserved</p>
             </a>
             <p class="pioneer-link">
                 <a href="https://promodj.ro" target="_blank">Promo DJ - Dealer Autorizat Pioneer</a>
@@ -523,6 +560,16 @@
                     d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
             </svg>
         </a>
+    </div>
+
+    <!-- Cookie Consent -->
+    <div id="cookie-consent" class="cookie-consent">
+        <p>Acest site folosește cookie-uri pentru a îmbunătăți experiența utilizatorilor. Acceptați utilizarea
+            cookie-urilor?</p>
+        <div class="cookie-consent-buttons">
+            <button id="accept-cookies" class="accept-cookies">Accept</button>
+            <button id="reject-cookies" class="reject-cookies">Refuz</button>
+        </div>
     </div>
 
     <script src="./assets/js/index.js"></script>
