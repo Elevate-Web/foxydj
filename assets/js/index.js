@@ -65,9 +65,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextBtn = document.getElementById("nextVideo");
 
   const videos = [
-    "https://www.youtube.com/embed/tAGnKpE4NCI",
-    "https://www.youtube.com/embed/9bZkp7q19f0",
-    "https://www.youtube.com/embed/9bZkp7q19f0",
+    "https://www.youtube.com/embed/ViTG3HZfwgk?si=JnnQqrmHm_BV3mI_",
+    "https://www.youtube.com/embed/mNOrxG7mDFU?si=hkhSXtpe9CEFkJH7",
+    "https://www.youtube.com/embed/nrYGRF-mB10",
   ];
 
   let currentVideo = 0;
