@@ -2090,6 +2090,7 @@ a.contact-value:hover {
 }
 
 @media (min-width: 1440px) {
+
     .lighting-grid,
     .simple-grid {
         grid-template-columns: repeat(5, 1fr);
@@ -2120,12 +2121,12 @@ a.contact-value:hover {
         grid-template-columns: repeat(2, 1fr);
         gap: 60px;
     }
-    
+
     .pricing-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
     }
-    
+
     .lighting-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
@@ -2155,7 +2156,7 @@ a.contact-value:hover {
         font-size: 26px;
         letter-spacing: 2.5px;
     }
-    
+
     .simple-description {
         min-height: 90px;
     }
@@ -2647,14 +2648,16 @@ a.contact-value:hover {
         font-size: 16px;
     }
 
-    .videos-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
+    .videos-grid,
     .photos-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .photos-grid .photo-item {
+        width: 100%;
     }
 
     .instagram-button {
