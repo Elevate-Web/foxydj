@@ -2090,10 +2090,10 @@ a.contact-value:hover {
 }
 
 @media (min-width: 1440px) {
+    .lighting-grid,
     .simple-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-                max-width: 1200px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -2127,13 +2127,22 @@ a.contact-value:hover {
     }
     
     .lighting-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-    
+
     .simple-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .lighting-grid .lighting-card:nth-child(5),
+    .simple-grid .simple-card:nth-child(5) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .servicii-hero-title {
@@ -2194,6 +2203,15 @@ a.contact-value:hover {
     .simple-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
+    }
+
+    .lighting-grid .lighting-card:nth-child(5),
+    .simple-grid .simple-card:nth-child(5) {
+        grid-column: 1 / -1;
+        margin-left: auto;
+        margin-right: auto;
+        width: 45vw;
+        max-width: 45vw;
     }
 
     .lighting-card,
