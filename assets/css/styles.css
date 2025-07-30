@@ -836,11 +836,10 @@ html {
     font-weight: 600;
 }
 
-/* Desktop */
-@media (min-width: 1025px) {
+@media (min-width: 1440px) {
     .echipa-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 30px;
         flex: 1;
         align-items: stretch;
@@ -855,8 +854,37 @@ html {
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .echipa-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        flex: 1;
+    }
+
+    .membru-card img {
+        height: 40vh;
+    }
+
+    .membru-card:nth-child(5) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* Tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
+    .membru-card:nth-child(5) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .echipa-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -2886,6 +2914,11 @@ a.contact-value:hover {
     opacity: 0.8;
 }
 
+.member-special {
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
 .member-skills {
     display: flex;
     flex-wrap: wrap;
@@ -3036,6 +3069,10 @@ a.contact-value:hover {
 }
 
 @media (min-width: 1440px) {
+    .team-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
     .echipa-hero-title {
         font-size: 108px;
         line-height: 120px;
@@ -3067,6 +3104,14 @@ a.contact-value:hover {
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+    }
+
+    .team-member:nth-child(5) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .values-grid {
@@ -3103,6 +3148,14 @@ a.contact-value:hover {
 
     .member-content {
         padding: 25px;
+    }
+
+    .team-member:nth-child(5) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .value-item {
